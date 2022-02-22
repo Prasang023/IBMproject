@@ -126,10 +126,12 @@ def show_data():
 
     #   Scatter plot of Deaths in Lockdown and in Unlock
     st.subheader("Scatter plot of Deaths in Lockdown and in Unlock")   # print
-    fig = plt.figure(figsize=(10, 10))
-    sns.catplot(x="Lockdown", y="Deaths", data=Mahadf)
+    x1 = Mahadf["Lockdown"]
+    y1 = Mahadf["Deaths"]
+    fig = plt.figure(figsize=(5, 10))
+    plt.scatter(x1, y1)
+    # sns.catplot(x="Lockdown", y="Deaths", data=Mahadf)
     st.pyplot(fig)
-    # plt.show()  # print
 
     # plotting Death rate in Maharashtra
     st.subheader("Death rate in Maharashtra")  # print

@@ -2,9 +2,9 @@ import streamlit as st
 from datetime import datetime
 from ibm import show_data
 
-st.sidebar.title("Stocks App")
+st.title('Project on "Predict how well can 21 days lockdown perform in containing spread of COVID19 Virus."')
 
-submit = st.sidebar.button('Show Result')
+submit = st.button('Show Result')
 
 if submit:
     st.success('Executed Successfully')
